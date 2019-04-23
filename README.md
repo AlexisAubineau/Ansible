@@ -24,11 +24,13 @@ Il faut modifier le fichier **ansible.cfg** pour y remplacer le remote_user par 
 	host_key_checking = False
 
 **Fichier config ip machine :**
+
 Il faut modifier les fichiers dans le dossier **host_vars** pour y placer les adresses ip de vos machines.
 
 	ansible_host: ip_address
 
 **Fichier config playbook :**
+
 Il faut modifier le **playbook.yml** dans le dossier **playbook** pour changer le remote_user par le même remote_user de votre **ansible.cfg**
 
 	- hosts: web
