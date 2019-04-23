@@ -18,6 +18,7 @@ Pas de besoin particulier
 ## Installation
 
 Pour installer ansible sur votre machine :
+
 /!\ Installation sous python
 
     sudo pip install ansible
