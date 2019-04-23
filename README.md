@@ -1,4 +1,4 @@
-# Asible
+# Ansible
 ## Installation
 Pour installer ansible sur votre machine :
 /!\ Installation sous python
