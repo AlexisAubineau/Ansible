@@ -43,13 +43,13 @@ Il faut modifier le fichier **ansible.cfg** pour y remplacer le remote_user par 
 
 **Fichier config ip machine :**
 
-Il faut modifier les fichiers dans le dossier **host_vars** pour y placer les adresses ip de vos machines.
+Il faut modifier les fichiers dans le dossier **host_vars/** pour y placer les adresses ip de vos machines.
 
 	ansible_host: ip_address
 
 **Fichier config playbook :**
 
-Il faut modifier le **playbook.yml** dans le dossier **playbook** pour changer le remote_user par le même remote_user de votre **ansible.cfg**
+Il faut modifier le **playbook.yml** dans le dossier **playbook/** pour changer le remote_user par le même remote_user de votre **ansible.cfg**
 
 	- hosts: web
 	  remote_user: username
@@ -71,7 +71,7 @@ Il faut modifier le **playbook.yml** dans le dossier **playbook** pour changer l
 
 **Fichier config MySql :**
 
-il faut modifier le fichier **main.yml** dans le dossier **playbook/mysql/defaults** et placer le nom de la db de votre choix **wp_db_name**
+il faut modifier le fichier **main.yml** dans le dossier **playbook/mysql/defaults/** et placer le nom de la db de votre choix **wp_db_name**
 
 	mysql_user_home: /root
 	mysql_user_name: root
@@ -80,7 +80,7 @@ il faut modifier le fichier **main.yml** dans le dossier **playbook/mysql/defaul
 
 **Fichier config Wordpress :**
 
-il faut modifier le fichier **main.yml** dans le dossier **playbook/wordpress/defaults** et y placer l'ip de **wp_db_host** ainsi que le nom de la db de **wp_db_name**
+il faut modifier le fichier **main.yml** dans le dossier **playbook/wordpress/defaults/** et y placer l'ip de **wp_db_host** ainsi que le nom de la db de **wp_db_name**
 
 	mysql_user_name: wordpress
 	mysql_user_password: Azerty123
