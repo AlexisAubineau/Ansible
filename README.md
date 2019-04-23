@@ -82,6 +82,10 @@ il faut modifier le fichier **main.yml** dans le dossier **playbook/mysql/defaul
  - le nom du user de la db : **mysql_user_name**
  - le mot de passe du user de la db : **mysql_user_password**
  - le nom de la db : **wp_db_name**
+ 
+ il faut modifier le fichier **main.yml** dans le dossier **playbook/mysql/tasks**
+ 
+ - changer la valeur de **host:** par l'ip privée de la database
 
 **Fichier config Wordpress :**
 
