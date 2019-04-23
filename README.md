@@ -100,7 +100,7 @@ il faut modifier le fichier **main.yml** dans le dossier **playbook/wordpress/de
 - le nom du user de la db : **mysql_user_name**
 - le mot de passe du user de la db : **mysql_user_password**
 - le nom de la db wordpress : **wp_db_name**
-- l'adresse ip du host de la db : **wp_db_host**
+- l'adresse ip privé du host de la db : **wp_db_host**
 
 ## Lancer le projet
 Pour lancer le projet il suffit de faire :
