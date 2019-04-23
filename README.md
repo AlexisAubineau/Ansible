@@ -23,12 +23,12 @@ Il faut modifier le fichier **ansible.cfg** pour y remplacer le remote_user par 
 	inventory = ./inventory.ini
 	host_key_checking = False
 
-**Fichier config ip machine**
+**Fichier config ip machine :**
 Il faut modifier les fichiers dans le dossier **host_vars** pour y placer les adresses ip de vos machines.
 
 	ansible_host: ip_address
 
-**Fichier config playbook**
+**Fichier config playbook :**
 Il faut modifier le **playbook.yml** dans le dossier **playbook** pour changer le remote_user par le même remote_user de votre **ansible.cfg**
 
 	- hosts: web
@@ -49,7 +49,7 @@ Il faut modifier le **playbook.yml** dans le dossier **playbook** pour changer l
 			- ftp
 
 
-**Fichier config MySql**
+**Fichier config MySql :**
 
 il faut modifier le fichier **main.yml** dans le dossier **playbook/mysql/defaults** et placer le nom de la db de votre choix **wp_db_name**
 
@@ -58,7 +58,7 @@ il faut modifier le fichier **main.yml** dans le dossier **playbook/mysql/defaul
 	mysql_user_password: root
 	wp_db_name: db_name
 
-**Fichier config Wordpress**
+**Fichier config Wordpress :**
 
 il faut modifier le fichier **main.yml** dans le dossier **playbook/wordpress/defaults** et y placer l'ip de **wp_db_host** ainsi que le nom de la db de **wp_db_name**
 
