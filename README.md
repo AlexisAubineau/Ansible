@@ -1,3 +1,4 @@
+
 # Ansible
 
 ## Ressources necessaire
@@ -71,22 +72,31 @@ Il faut modifier le **playbook.yml** dans le dossier **playbook/** pour changer 
 
 **Fichier config MySql :**
 
-il faut modifier le fichier **main.yml** dans le dossier **playbook/mysql/defaults/** et placer le nom de la db de votre choix **wp_db_name**
-
-	mysql_user_home: /root
+il faut modifier le fichier **main.yml** dans le dossier **playbook/mysql/defaults/** 
+ 
+ 	mysql_user_home: /root
 	mysql_user_name: root
 	mysql_user_password: root
 	wp_db_name: db_name
+ 
+ - le nom du user de la db : **mysql_user_name**
+ - le mot de passe du user de la db : **mysql_user_password**
+ - le nom de la db : **wp_db_name**
 
 **Fichier config Wordpress :**
 
-il faut modifier le fichier **main.yml** dans le dossier **playbook/wordpress/defaults/** et y placer l'ip de **wp_db_host** ainsi que le nom de la db de **wp_db_name**
+il faut modifier le fichier **main.yml** dans le dossier **playbook/wordpress/defaults/**
 
 	mysql_user_name: wordpress
 	mysql_user_password: Azerty123
 	wp_db_name: db_name
 	wp_db_host: ip_address
 
+
+- le nom du user de la db : **mysql_user_name**
+- le mot de passe du user de la db : **mysql_user_password**
+- le nom de la db wordpress : **wp_db_name**
+- l'adresse ip du host de la db : **wp_db_host**
 
 ## Lancer le projet
 Pour lancer le projet il suffit de faire :
