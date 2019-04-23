@@ -1,5 +1,22 @@
 # Ansible
+
+## Ressources necessaire
+
+**2 VM :**
+
+Elles doivent être **impérativement** sur le même sous-réseau.
+Accessible via SSH.
+
+**Apache :**
+
+Il vous faut une IP public avec le port 80 d'autoriser pour que Wordpress puisse communiquer
+
+**MySQL :**
+
+Pas de besoin particulier
+
 ## Installation
+
 Pour installer ansible sur votre machine :
 /!\ Installation sous python
 
