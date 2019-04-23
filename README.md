@@ -4,8 +4,8 @@
 
 **2 VM :**
 
-Elles doivent être **impérativement** sur le même sous-réseau.
-Accessible via SSH.
+- Elles doivent être **impérativement** sur le même sous-réseau.
+- Accessible via SSH.
 
 **Apache :**
 
