@@ -33,7 +33,7 @@ Avant de pouvoir charger et travailler sur le projet quelques modifications sont
 
 **Fichier de config d'ansible :**
 
-Il faut modifier le fichier **ansible.cfg** pour y remplacer le remote_user par celui que vous allez utiliser et donner le chemin de votre clée ssh.
+Il faut modifier le fichier **ansible.cfg** pour y remplacer le **remote_user** par celui que vous allez utiliser et donner le chemin de votre clée ssh du **private_key_file**.
     
     [default]
 	remote_user = username
@@ -49,7 +49,7 @@ Il faut modifier les fichiers dans le dossier **host_vars/** pour y placer les a
 
 **Fichier config playbook :**
 
-Il faut modifier le **playbook.yml** dans le dossier **playbook/** pour changer le remote_user par le même remote_user de votre **ansible.cfg**
+Il faut modifier le **playbook.yml** dans le dossier **playbook/** pour changer le **remote_user** par le même **remote_user** que votre **ansible.cfg**
 
 	- hosts: web
 	  remote_user: username
